@@ -7,7 +7,7 @@ function generateChart() {
             polar: true
         },
         title: {
-            text: 'Comparison of Djokovic\'s rally points and length with every opponent in the AUS open finals (2012-2019)'
+            text: 'Comparison of Djokovic\'s rally points and length with every opponent in the AUS open finals (2011-2019)'
         },
         tooltip: {
             outside: true
