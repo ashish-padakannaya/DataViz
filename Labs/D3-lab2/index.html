@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+    </head>
+    <body>
+        <title>testing</title>       
+        <h2>CSE 578 Data Visualization</h2>
+
+        <div id="viz"></div>
+    </body>
+    <script>
+
+        function showEvent(){
+            alert("end of movement");
+        }
+        
+        d3.select('body').style("background-color","#D8D8D8");
+
+        //1.1
+        d3.select('body h2').style("color","blue");
+
+        //1.3
+        d3.select('body h2').text('changed header text');
+
+        //2
+        var svgCircle = d3.select("#viz").append("svg").attr("width", 600) 
+                        .attr("height", 800);
+        var circle = svgCircle.append("circle").style("stroke", "gray").style("fill", "white")
+                     .attr("r", 40).attr("cx", 50).attr("cy", 50);
+        
+        //2.1
+        //use align right
+        d3.select("#viz").attr("align","right");
+
+        //2.2
+        //select viz->svg->circle and move 
+        d3.select("#viz svg circle")
+            .transition()
+            .attr("cx", 500)
+            .attr("cy", 50)
+            .duration(1000)
+            .delay(500)
+            
+        //2.3
+        //add movement down after first transtion
+        d3.select("#viz svg circle")
+            .transition()
+            .attr("cx", 500)
+            .attr("cy", 50)
+            .duration(1000)
+            .delay(500)
+            .transition()
+            .attr("cx",500)
+            .attr("cy", 500)
+            .duration(1000)
+            
+        
+        //2.4
+        //alert function called after movement
+        d3.select("#viz svg circle")
+            .transition()
+            .attr("cx", 500)
+            .attr("cy", 50)
+            .duration(1000)
+            .delay(500)
+            .transition()
+            .attr("cx",500)
+            .attr("cy", 500)
+            .duration(1000)
+            .each("end", function() {alert('reached bottom')})
+
+        //2.5
+        //alert function called after each movement
+        d3.select("#viz svg circle")
+            .transition()
+            .attr("cx", 500)
+            .attr("cy", 50)
+            .duration(1000)
+            .delay(500)
+            .each("end", function() {alert('reached right')})
+            .transition()
+            .attr("cx",500)
+            .attr("cy", 500)
+            .duration(1000)
+            .each("end", function() {alert('reached bottom')})
+
+    </script>
+</html>
