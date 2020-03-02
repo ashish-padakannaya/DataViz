@@ -13,9 +13,9 @@ const generateMatchChart = (p1_color, p1_i_color, p2_color, p2_i_color, game, sc
             text: `<span style="background-color:${p1_color};color:${p1_i_color}">${p1}</span>
                  vs 
                 <span style="background-color:${p2_color};color:${p2_i_color}">${p2}</span> <br/>
-                <b>stage:</b> ${game} <br/>
+                <b>Stage:</b> ${game} <br/>
                 <b>Winner:</b> ${p1} <br/>
-                <b>score: </b>${scores}`,
+                <b>Score: </b>${scores}`,
             style: {
                 "text-align": "center"
             }
