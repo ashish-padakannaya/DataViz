@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <link rel="stylesheet" href="lib/css/flexboxgrid.css" type="text/css">
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="lib/css/font-awesome.css">
         <link rel="stylesheet" href="lib/css/milligram.css">
         <link rel="stylesheet" href="lib/css/normalize.css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -13,7 +13,7 @@
 
     <body class="container">
         <div class="row center-xs">
-            <h1 style="color: black;">Breakdown of all AUS open tennis tournaments from 2002-11</h1>
+            <h1 style="color: black;">Breakdown of all AUS open tennis tournaments from 2004-14</h1>
         </div>
             <!-- Select -->
             <div class="row">
@@ -33,20 +33,20 @@
                         <option value="2014">2014</option>
                     </select>
                 </div>
-                <div class="col-sm-3">
-                    <label for="stageSelect">Show data from stage to final:</label>
+                <div class="col-sm-4">
+                    <label id ="test" for="stageSelect">Show data from stage to final:</label>
                     <select id="stageSelect" onchange="selectUpdate()">
-                        <option value="1">First</option>
-                        <option value="2">Second</option>
-                        <option value="3">Third</option>
-                        <option value="4" selected>Fourth</option>
-                        <option value="5">quarter</option>
-                        <option value="6">semi</option>
+                        <option value="1">First round</option>
+                        <option value="2">Second round</option>
+                        <option value="3">Third round</option>
+                        <option value="4" selected>Fourth round</option>
+                        <option value="5">Quarter final</option>
+                        <option value="6">Semi final</option>
                         <option value="7">Final</option>
                     </select>
                 </div>
-                <div class="col-sm-7" style="margin-top: 3.25%;">
-                    <i class="fas fa-exclamation-circle"></i><b>Tip: Hover over player names and their arcs to get a drilldown</b>
+                <div class="col-sm-6" style="margin-top: 3.25%;">
+                    <i class="fas fa-exclamation-circle"></i><b>Tip: Hover over player names and their inner chords to get a drilldown</b>
                 </div>
             </div>
 

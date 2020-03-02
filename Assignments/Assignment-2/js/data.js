@@ -1,8 +1,8 @@
 levels = ['First', 'Second', 'Third', 'Fourth', 'quarter', 'semi', 'Final'];
 file = "10yearAUSOpenMatches.csv";
 metrics = {
-    player1: ['firstServe1','firstPointWon1','secPointWon1','break1','return1'],
-    player2: ['firstServe2','firstPointWon2','secPointWon2','break2','return2',]
+    player1: [,'firstPointWon1','secPointWon1','break1','return1','net1'],
+    player2: ['firstPointWon2','secPointWon2','break2','return2','net2']
 }
 
 const get_scores = (results) => {

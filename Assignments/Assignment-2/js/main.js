@@ -215,6 +215,15 @@ function updateChords() {
 selectUpdate = () => {
     year = parseInt(document.getElementById("yearSelect").value);
     stage = parseInt(document.getElementById("stageSelect").value);
+
+
+    var e = document.getElementById("stageSelect");
+    var strStage = e.options[e.selectedIndex].text;
+    if(strStage != 'Final')
+        d3.select("#test").text(`Show data from ${strStage} till Final`);
+    else
+        d3.select("#test").text(`Show data for just the Final round`);
+
     setChord(year, stage);
 }
 

@@ -29,7 +29,12 @@ const generateMatchChart = (p1_color, p1_i_color, p2_color, p2_i_color, game, sc
         },
 
         xAxis: {
-            categories: ['firstServe','firstPointWon','secPointWon','break','return'],
+            categories: [
+                'Wins on first serve',
+                'Wins on second serve',
+                'Break point Conversion',
+                'Return points won',
+                'Net approaches won'],
             tickmarkPlacement: 'on',
             lineWidth: 0
         },
@@ -40,10 +45,6 @@ const generateMatchChart = (p1_color, p1_i_color, p2_color, p2_i_color, game, sc
             min: 0
         },
 
-        tooltip: {
-            shared: true,
-            pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
-        },
         series: [{
             data: metrics[0],
             color: p1_color,
